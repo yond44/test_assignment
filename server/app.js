@@ -19,8 +19,8 @@ app.use('/api/merchants/:merchantId/products', productRoutes);
 app.post('/checkoddeven', mathHandlers.checkOddEven);
 app.post('/sum', mathHandlers.sum);
 app.get('/is-21-century', mathHandlers.is21Century);
-app.get('/is-week-end', mathHandlers.isweekend);
-app.get('/is-leap-year', mathHandlers.leapYear);
+app.get('/is-week-end', dateHandlers.isweekend);
+app.get('/is-leap-year', dateHandlers.leapYear);
 
 app.use(errorHandler);
 app.use('*', (req, res, next) => {
