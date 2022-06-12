@@ -4,6 +4,7 @@ const productRoutes = require('./routes/products');
 const { errorHandler, verifyToken } = require('./middleware')
 const authHandlers = require('./handlers/auth')
 const mathHandlers = require('./handlers/math')
+const dateHandlers  = require('./handlers/date')
 
 
 const app = express();
